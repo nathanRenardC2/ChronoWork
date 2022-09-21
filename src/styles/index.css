@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+#root{
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.programme-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programme-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programme-form > div{
+  margin: 5px;
+}
+
+.programme-form > div > input{
+  margin: 5px;
+  border-radius: 5px;
+  border: #2b6cb0 solid 2px;
+}
+
+.programme-form > button{
+  margin: 5px;
+  background-color: white;
+  width: 60%;
+  padding: 5px 0px 5px 0px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: #2b6cb0 solid 2px;
+}
+
+.programme-form > button:hover{
+  cursor: pointer;
+  background-color: #2b6cb0;
+  color: white;
+}
+
+h2{
+  margin: 20px 0px 20px 0px !important;
+  text-align: center;
+  padding: 10px;
+  font-size: 23px !important;
+  font-weight: bold !important;
+  color: #2b6cb0;
+  width: 100%;
+  border-bottom: #2b6cb0 solid 2px;
+}
+
+
+label{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.programme-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 60px;
+  padding-left: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: #2b6cb0 solid 4px;
+  border-radius: 10px;
+}
+
+.app{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.all-programmes{
+  list-style: none;
+}
+
+.recap-programme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recap-programme > li{
+  margin: 10px;
+  background-color: white;
+  padding: 5px;
+}
+
+.recap-programme > button{
+  font-weight: bold;
+}
+
+.recap-programme > button:hover{
+  color: #2b6cb0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.css-120wkjd{
+  font-size: 102px !important;
+  font-weight: bold !important;
+  color: #2b6cb0 !important;
+}
+
+.stop-watch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Control-Buttons{
+  border: #2b6cb0 solid 2px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.Control-Buttons:hover{
+  cursor: pointer;
+  background-color: #2b6cb0;
+  color: white;
+}
+
+.legende-bleu{
+  color: #2b6cb0;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.legende-violet{
+  color: #a779e9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.blue-600{
+  color: #2b6cb0;
+  font-weight: bold;
+}
+
+.purple-400{
+  color: #a779e9;
+  font-weight: bold;
+}
+
+input[type="time"] {
+  background: #fff;
+  min-width: 150px;
+}
+
+input[type="time"]:before {
+  content: 'HH:mm ss';
+  color: #9d9d9d;
+  position: absolute;
+  background: #fff;
+  width: 70px;
+}
+
+input[type="time"]:focus:before {
+  width: 0;
+  content: '';
+}
+
+.legende{
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 621px) {
+  .app{
+    flex-direction: column;
+  }
+
+  .programme-list{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .stop-watch{
+    margin: 10px 0px 10px 0px;
+  }
+}
+  
+
+
